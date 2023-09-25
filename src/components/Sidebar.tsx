@@ -10,12 +10,12 @@ const Sidebar = () => {
     const pathname = usePathname()
 
   return (
-    <div className='flex-1 h-screen border flex flex-col items-center gap-[25px] pt-[300px]'>
+    <div className='w-[200px] h-screen border flex flex-col items-center gap-[30px] pt-[300px]'>
         {sidebarMenu.map((route) => (
-            <Link key={route.id} href={route.link} className={`flex justify-center hover:bg-black/90 border-black/95 rounded-full border w-1/2 aspect-square items-center transition ${pathname === route.link ? 'bg-black text-white' : 'text-black'}`}>
-                <Button className='uppercase' variant={'ghost'}>
+            <Link key={route.id} href={route.link} className={`flex justify-center hover:bg-black/90 hover:text-white border-black/95 rounded-lg border h-[80px] w-3/4 items-center transition ${pathname === route.link ? 'bg-black text-white' : 'text-black'}`}>
+                <div className='uppercase'>
                     {route.name}
-                </Button>
+                </div>
             </Link>
         ))}
     </div>

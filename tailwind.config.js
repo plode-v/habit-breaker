@@ -74,6 +74,9 @@ module.exports = {
         'dela': ['Dela Gothic One', 'cursive']
       }
     },
+    screens: {
+      '3xl': '1920px'
+    }
   },
   plugins: [require("tailwindcss-animate")],
 }
