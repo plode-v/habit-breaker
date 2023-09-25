@@ -1,13 +1,17 @@
 import React from 'react'
-import { auth, UserButton } from '@clerk/nextjs'
+import Sidebar from '@/components/Sidebar';
+import DashboardCenter from '@/components/DashboardCenter';
+import DashboardRight from '@/components/DashboardRight';
 
 
 const Dashboard = () => {
 
-    const { userId } = auth();
-
   return (
-    <div>Dashboard</div>
+    <div className='flex min-h-screen h-screen max-w-screen bg-gradient-to-r from-yellow-100 via-pink-50 to-pink-100'>
+      <Sidebar />
+      <DashboardCenter />
+      <DashboardRight />
+    </div>
   )
 }
 
