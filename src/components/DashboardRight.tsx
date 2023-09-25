@@ -1,20 +1,7 @@
-'use client'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import Clock from './Clock';
 
 const DashboardRight = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000)
-
-    return () => {
-      clearInterval(timerID)
-    }
-  }, []);
-
-  const tick = () => {
-    setCurrentTime(new Date());
-  }
 
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -31,7 +18,7 @@ const DashboardRight = () => {
           <p className='text-right text-[2.5rem] m-0 uppercase'>{month}</p>
           <p className='text-right leading-none m-0'>{year}</p>
         </div>
-        <p className='mt-[50px] text-[1.5rem] font-[500] text-right'>{currentTime.toLocaleTimeString()}</p>
+        <Clock className="mt-[50px] text-[1.5rem] font-[500] text-right" />
       </div>
     </div>
   )
