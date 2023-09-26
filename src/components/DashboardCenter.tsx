@@ -3,15 +3,15 @@ import React from 'react'
 const DashboardCenter = () => {
 
   return (
-    <div className='flex-[6] border h-screen flex flex-col items-center pt-[200px]'>
+    <div className='flex-[6] border flex flex-col items-center justify-center'>
         <div className='w-full flex flex-col px-10'>
             <div className='flex justify-start'>
-                <h1 className='font-[600] text-[4rem] leading-none font-dela uppercase'>dashboard</h1>
+                <h1 className='font-[600] text-[1.5rem] lg:text-[4rem] leading-none font-dela uppercase'>dashboard</h1>
             </div>
-            <div className='text-[3rem] leading-none'>
+            <div className='lg:text-[3rem] text-[1rem] leading-none'>
                 date adjustment
             </div>
-            <div className='flex w-full justify-between h-[80px]'>
+            <div className='flex w-full justify-between lg:h-[80px] h-[30px]'>
                 <div className='border'>
                     Date
                 </div>
@@ -19,7 +19,7 @@ const DashboardCenter = () => {
                     View Options
                 </div>
             </div>
-            <div className='border w-full h-[500px]'>
+            <div className='border w-[500px] h-[350px]'>
                 chart
             </div>
         </div>

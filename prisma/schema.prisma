@@ -8,6 +8,7 @@ generator client {
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
+  relationMode = "prisma"
 }
 
 
@@ -25,4 +26,6 @@ model LogEntry {
   time DateTime
   habit Habit @relation(fields: [habitId], references: [id])
   createdAt DateTime @default(now())
+
+  @@index([habitId])
 }

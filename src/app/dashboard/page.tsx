@@ -7,7 +7,7 @@ import DashboardRight from '@/components/DashboardRight';
 const Dashboard = () => {
 
   return (
-    <div className='flex min-h-screen h-screen max-w-screen bg-gradient-to-r from-yellow-100 via-pink-50 to-pink-100 3xl:justify-center'>
+    <div className='flex min-h-screen w-screen bg-gradient-to-r from-yellow-100 via-pink-50 to-pink-100 justify-center'>
       <div className='w-full 3xl:w-2/3 flex'>
         <Sidebar />
         <DashboardCenter />

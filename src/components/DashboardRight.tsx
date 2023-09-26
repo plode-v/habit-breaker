@@ -11,14 +11,11 @@ const DashboardRight = () => {
   const year = new Date().getFullYear()
 
   return (
-    <div className='flex-1 h-full pt-[200px] relative'>
-      <div className='absolute top-[20px] right-[20px]'>
-        <UserButton />
-      </div>
+    <div className='flex-1 h-full lg:pt-10 relative'>
       <div className='w-min font-dela'>
-        <p className='text-[6rem] leading-none'>{date}</p>
-        <p className='text-right text-[2.5rem] m-0 uppercase'>{month}</p>
-        <p className='text-right leading-none m-0'>{year}</p>
+        <p className='text-[32px] lg:text-[80px] leading-none'>{date}</p>
+        <p className='text-right text-[1rem] sm:text-[1.5rem] 3xl:text-[2.5rem] m-0 uppercase'>{month}</p>
+        <p className='text-right text-[0.85rem] lg:text-[1rem] 3xl-[1.25rem] leading-none m-0'>{year}</p>
       </div>
     </div>
   )
