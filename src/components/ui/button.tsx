@@ -10,6 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        heroBanner: "bg-violet-500 text-white rounded-lg text-[16px] hover:brightness-110 capitalize",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
