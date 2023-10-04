@@ -8,9 +8,9 @@ module.exports = {
       "dela": 'Dela Gothic One'
     },
     extend: {
-      screen: {
-        '3xl': '1920px'
-      },
+      screens: {
+        "3xl": "2100px"
+      }
     },
   },
   plugins: [],
