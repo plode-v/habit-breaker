@@ -3,7 +3,7 @@ import { Button } from '../ui/button'
 
 const ProductSection = () => {
   return (
-    <div className='h-[70vh] w-full border flex-col flex'>
+    <div className='3xl:h-[70vh] h-screen w-full border flex-col flex'>
         <div className='flex-1 items-center flex'>
             <div className='flex-1 h-full border'>
                 img
