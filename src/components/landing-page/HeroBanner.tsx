@@ -8,7 +8,7 @@ const HeroBanner = () => {
   return (
     <div className='h-[680px] w-full border flex bg-gradient-to-b from-purple-200 to-blue-200'>
         <div className='border flex-1 flex-col flex items-start justify-end pl-20 pb-14'>
-            <div className='block font-[700] text-[64px] leading-none capitalize mb-10'>
+            <div className='block font-[700] text-[64px] leading-none capitalize mb-10 text-neutral-800'>
                 <h1>break the bad</h1>
                 <h1>keep the good</h1>
             </div>
