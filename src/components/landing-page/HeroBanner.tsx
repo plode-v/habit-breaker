@@ -3,7 +3,7 @@ import { Button } from '../ui/button'
 
 const HeroBanner = () => {
   return (
-    <div className='3xl:h-[calc(50vh+60px)] h-[calc(80vh+60px)] w-full border flex'>
+    <div className='xl:h-[calc(50vh+60px)] h-[calc(70vh+60px)] w-full border flex'>
         <div className='border flex-1 flex-col flex items-start justify-end px-10 pb-14'>
             <div className='block font-[700] text-[64px] leading-none capitalize mb-10'>
                 <h1>break the bad</h1>
