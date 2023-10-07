@@ -15,7 +15,7 @@ const FeatureComponent = ({ animation, feature, description }: Children ) => {
           {animation}
         </div>
       </div>
-      <div className='px-8 text-center flex flex-col h-1/2'>
+      <div className='px-20 text-center flex flex-col h-1/2'>
         <p className='font-[600] capitalize text-[20px] py-5'>{feature}</p>
         <p className='leading-snug'>
           {description}

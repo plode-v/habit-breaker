@@ -1,5 +1,6 @@
 import React from 'react'
 import FeatureComponent from './FeatureComponent'
+import { features } from '@/lib/data'
 
 const Features = () => {
   return (
@@ -9,25 +10,18 @@ const Features = () => {
             <p className='text-[14px] text-neutral-500 w-1/2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
         <div className='h-full w-full flex justify-evenly'>
-            <FeatureComponent 
-                animation="lottie"
-                feature='specific feature 1'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-            />
-            <FeatureComponent 
-                animation="lottie"
-                feature='specific feature 2'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-            />
-            <FeatureComponent 
-                animation="lottie"
-                feature='specific feature 3'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-            />
+            {features.map(feature => (
+                <FeatureComponent 
+                    key={feature.feature}
+                    animation={feature.animation}
+                    feature={feature.feature}
+                    description={feature.description}
+                />
+            ))}
 
         </div>
     </div>
   )
-}
 
+}
 export default Features

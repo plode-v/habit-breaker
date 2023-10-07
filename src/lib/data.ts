@@ -43,3 +43,22 @@ export const sidebarMenu = [
         icon: null
     }
 ]
+
+
+export const features = [
+    {
+        animation: "lottie",
+        feature: "Personalized Habit Tracking",
+        description: "Allows you to set personalized goals, track progress, and view insightful statistics on your habit-breaking journey."
+    },
+    {
+        animation: "",
+        feature: "Accountability",
+        description: "Creates a sense of accountability. When individuals record your progress, you're more likely to stick to your goals and resist the temptation to revert to your old habits."
+    },
+    {
+        animation: "",
+        feature: "Enhanced Productivity",
+        description: "Overcome procastination and distractions. Achieve more, faster!"
+    }
+]
