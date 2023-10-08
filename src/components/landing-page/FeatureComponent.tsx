@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface Children {
-  animation: string
+  animation: React.ReactNode
   feature: string
   description: string
 }
@@ -11,7 +11,7 @@ const FeatureComponent = ({ animation, feature, description }: Children ) => {
   return (
     <div className='h-full w-1/2 flex flex-col items-center'>
       <div className='h-1/2 w-full flex items-center pt-20 justify-center'>
-        <div className='h-[120px] w-[120px] border rounded-full justify-center flex items-center'>
+        <div className='h-[100px] w-[100px] rounded-full bg-blue-600 justify-center flex items-center text-[40px] text-neutral-100'>
           {animation}
         </div>
       </div>

@@ -44,20 +44,23 @@ export const sidebarMenu = [
     }
 ]
 
+import { PiNotePencilBold } from 'react-icons/pi'
+import { RiMentalHealthFill } from "react-icons/ri"
+import { HiMiniRocketLaunch } from "react-icons/hi2"
 
 export const features = [
     {
-        animation: "lottie",
+        animation: <PiNotePencilBold />,
         feature: "Personalized Habit Tracking",
-        description: "Allows you to set personalized goals, track progress, and view insightful statistics on your habit-breaking journey."
+        description: "Enables personalized goal-setting, progress tracking, and insightful habit-breaking stats."
     },
     {
-        animation: "",
+        animation: <RiMentalHealthFill />,
         feature: "Accountability",
-        description: "Creates a sense of accountability. When individuals record your progress, you're more likely to stick to your goals and resist the temptation to revert to your old habits."
+        description: "Encourages accountability, making it easier to stay committed to your goals and resist old habits."
     },
     {
-        animation: "",
+        animation: <HiMiniRocketLaunch />,
         feature: "Enhanced Productivity",
         description: "Overcome procastination and distractions. Achieve more, faster!"
     }
