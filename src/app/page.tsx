@@ -6,12 +6,10 @@ import ProductSection from "@/components/landing-page/ProductSection"
 export default function Home() {
   return (
     <div className='min-h-screen w-full flex flex-col items-center'>
-      <div className="relative items-center justify-center flex flex-col w-full 3xl:w-1/2">
         <Navbar />
         <HeroBanner />
         <Features />
         <ProductSection />
-      </div>
     </div>
   )
 }
